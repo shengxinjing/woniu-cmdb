@@ -484,7 +484,7 @@ $.extend(RebootPage.prototype, {
                 //将数据放在data里,编辑的时候从这里取数据渲染表单
                 $.each(v, function(key, val) {
                     if (val || val === 0) {
-                        btn.push(' data-' + key + '=' + val)
+                        btn.push(' data-' + key + '="' + val+'"')
                     };
 
                 })
